@@ -52,11 +52,6 @@ modules:
           title: Flathub (system)
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
-          - com.github.tchx84.Flatseal
-          - io.github.flattool.Warehouse
-          - io.missioncenter.MissionCenter
-          - com.github.rafostar.Clapper
-          - org.gnome.Loupe
           - page.kramo.Cartridges
 #*####################################
 
@@ -65,5 +60,5 @@ modules:
 #*####################################
   - type: files
     files:
-      - source: files/scripts/*   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+      - source: ./files/scripts/*   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /usr
