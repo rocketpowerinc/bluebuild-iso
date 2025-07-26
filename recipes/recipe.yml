@@ -66,4 +66,4 @@ modules:
   - type: files
     files:
       - source: /files/scripts/*   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-        destination: $HOME
+        destination: /usr/share/default-files/
