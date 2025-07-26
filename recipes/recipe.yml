@@ -45,12 +45,7 @@ modules:
     configurations:
       - scope: user
         repo:
-          # you can override the title to make inclusion of both system and user repos clearer
           title: Flathub (user)
-      - notify: true
-        scope: system
-        repo:
-          title: Flathub (system)
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
           - page.kramo.Cartridges
@@ -62,4 +57,4 @@ modules:
   - type: files
     files:
       - source: system  # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-        destination: /usr
+        destination: /
