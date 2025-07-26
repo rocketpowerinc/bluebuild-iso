@@ -60,5 +60,5 @@ modules:
 #*####################################
   - type: files
     files:
-      - source: /files/scripts/*   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+      - source: system  # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /usr
